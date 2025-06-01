@@ -45,33 +45,54 @@ const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
           className="drop-shadow-lg"
         />
         
-        {/* Inner Circle */}
+        {/* White Inner Circle Background */}
         <circle
           cx="20"
           cy="19"
-          r="8"
+          r="9"
           fill="white"
-          opacity="0.9"
+          opacity="0.95"
         />
         
-        {/* Wrench/Tool Icon */}
+        {/* House Shape */}
+        {/* Roof */}
         <path
-          d="M16 15.5L18.5 18L24 12.5L22.5 11L17 16.5L16 15.5Z"
+          d="M20 12L26 17.5H14L20 12Z"
           fill="url(#logoGradient)"
-          strokeWidth="1"
-          stroke="url(#logoGradient)"
         />
-        <path
-          d="M15 19.5L17.5 22L19 20.5L16.5 18L15 19.5Z"
+        
+        {/* House Body */}
+        <rect
+          x="15"
+          y="17.5"
+          width="10"
+          height="7"
           fill="url(#logoGradient)"
-          strokeWidth="1"
-          stroke="url(#logoGradient)"
         />
-        <circle
-          cx="18"
-          cy="19"
-          r="1.5"
-          fill="url(#logoGradient)"
+        
+        {/* Door */}
+        <rect
+          x="18.5"
+          y="20"
+          width="3"
+          height="4.5"
+          fill="white"
+        />
+        
+        {/* Windows */}
+        <rect
+          x="16"
+          y="19"
+          width="1.5"
+          height="1.5"
+          fill="white"
+        />
+        <rect
+          x="22.5"
+          y="19"
+          width="1.5"
+          height="1.5"
+          fill="white"
         />
       </svg>
     </div>
