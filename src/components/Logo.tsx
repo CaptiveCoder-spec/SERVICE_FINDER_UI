@@ -24,9 +24,9 @@ const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
         {/* Gradient Definitions */}
         <defs>
           <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#8B5CF6" />
-            <stop offset="50%" stopColor="#3B82F6" />
-            <stop offset="100%" stopColor="#06B6D4" />
+            <stop offset="0%" stopColor="#FF6B35" />
+            <stop offset="50%" stopColor="#FF4500" />
+            <stop offset="100%" stopColor="#E63946" />
           </linearGradient>
           <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
@@ -54,46 +54,66 @@ const Logo: React.FC<LogoProps> = ({ className = '', size = 'md' }) => {
           opacity="0.95"
         />
         
-        {/* House Shape */}
-        {/* Roof */}
-        <path
-          d="M20 12L26 17.5H14L20 12Z"
-          fill="url(#logoGradient)"
-        />
+        {/* Crossed Tools */}
+        {/* Hammer */}
+        <g transform="translate(20, 19)">
+          {/* Hammer handle */}
+          <rect
+            x="-1"
+            y="2"
+            width="2"
+            height="6"
+            fill="url(#logoGradient)"
+            transform="rotate(45)"
+          />
+          {/* Hammer head */}
+          <rect
+            x="-2.5"
+            y="-1"
+            width="5"
+            height="2"
+            fill="url(#logoGradient)"
+            transform="rotate(45)"
+          />
+        </g>
         
-        {/* House Body */}
-        <rect
-          x="15"
-          y="17.5"
-          width="10"
-          height="7"
-          fill="url(#logoGradient)"
-        />
-        
-        {/* Door */}
-        <rect
-          x="18.5"
-          y="20"
-          width="3"
-          height="4.5"
-          fill="white"
-        />
-        
-        {/* Windows */}
-        <rect
-          x="16"
-          y="19"
-          width="1.5"
-          height="1.5"
-          fill="white"
-        />
-        <rect
-          x="22.5"
-          y="19"
-          width="1.5"
-          height="1.5"
-          fill="white"
-        />
+        {/* Wrench */}
+        <g transform="translate(20, 19)">
+          {/* Wrench handle */}
+          <rect
+            x="-1"
+            y="-8"
+            width="2"
+            height="6"
+            fill="url(#logoGradient)"
+            transform="rotate(-45)"
+          />
+          {/* Wrench head */}
+          <rect
+            x="-1.5"
+            y="-3"
+            width="3"
+            height="2"
+            fill="url(#logoGradient)"
+            transform="rotate(-45)"
+          />
+          <rect
+            x="-2"
+            y="-2"
+            width="1"
+            height="1"
+            fill="url(#logoGradient)"
+            transform="rotate(-45)"
+          />
+          <rect
+            x="1"
+            y="-2"
+            width="1"
+            height="1"
+            fill="url(#logoGradient)"
+            transform="rotate(-45)"
+          />
+        </g>
       </svg>
     </div>
   );

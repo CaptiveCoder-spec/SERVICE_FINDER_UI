@@ -33,7 +33,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
   return (
     <div className={`fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-blue-50/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-orange-50/30" />
 
       {/* Main Loading Content */}
       <div className="relative z-10 text-center">
@@ -47,7 +47,8 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
         {/* Brand Text */}
         <div className="mb-12">
           <h1 className="text-3xl font-bold text-gray-800 mb-2 font-sora">
-            Local Services
+            <span className="text-orange-600">Pin</span>
+            <span className="text-gray-700">Wrench</span>
           </h1>
           <p className="text-gray-500 font-light">
             Connecting you with trusted professionals
@@ -58,7 +59,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
         <div className="w-48 mx-auto">
           <div className="w-full bg-gray-100 rounded-full h-1 overflow-hidden">
             <div 
-              className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-200 ease-out"
+              className="h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-full transition-all duration-200 ease-out"
               style={{ width: `${progress}%` }}
             />
           </div>

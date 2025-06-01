@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -42,20 +43,20 @@ const Navbar = () => {
           <Link to="/" className="flex items-center">
             <Logo className="mr-2" />
             <span className="font-sora text-xl font-bold">
-              <span className="text-brand-600">Local</span>
-              <span className="text-gray-700 dark:text-gray-300">Services</span>
+              <span className="text-orange-600">Pin</span>
+              <span className="text-gray-700 dark:text-gray-300">Wrench</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/discover" className="text-gray-700 hover:text-brand-600 dark:text-gray-300 dark:hover:text-brand-400 transition-colors">
+            <Link to="/discover" className="text-gray-700 hover:text-orange-600 dark:text-gray-300 dark:hover:text-orange-400 transition-colors">
               Find Services
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-brand-600 dark:text-gray-300 dark:hover:text-brand-400 transition-colors">
+            <Link to="#" className="text-gray-700 hover:text-orange-600 dark:text-gray-300 dark:hover:text-orange-400 transition-colors">
               For Providers
             </Link>
-            <Link to="#" className="text-gray-700 hover:text-brand-600 dark:text-gray-300 dark:hover:text-brand-400 transition-colors">
+            <Link to="#" className="text-gray-700 hover:text-orange-600 dark:text-gray-300 dark:hover:text-orange-400 transition-colors">
               How It Works
             </Link>
           </div>
@@ -71,7 +72,7 @@ const Navbar = () => {
               </Button>
             </Link>
             <Link to="/auth">
-              <Button className="rounded-full bg-brand-500 hover:bg-brand-600">
+              <Button className="rounded-full bg-orange-500 hover:bg-orange-600">
                 Sign Up
               </Button>
             </Link>
@@ -117,14 +118,14 @@ const Navbar = () => {
               <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
                 <Link 
                   to="/auth" 
-                  className="block px-4 py-2 text-center text-brand-500 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+                  className="block px-4 py-2 text-center text-orange-500 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   Sign In
                 </Link>
                 <Link 
                   to="/auth" 
-                  className="block px-4 py-2 mt-2 text-center text-white bg-brand-500 hover:bg-brand-600 rounded-lg"
+                  className="block px-4 py-2 mt-2 text-center text-white bg-orange-500 hover:bg-orange-600 rounded-lg"
                   onClick={() => setMobileNavOpen(false)}
                 >
                   Sign Up
