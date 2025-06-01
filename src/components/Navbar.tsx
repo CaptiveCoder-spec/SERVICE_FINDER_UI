@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import Logo from './Logo';
 import { 
   Search, 
   Menu, 
@@ -40,9 +40,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-brand-500 text-white mr-2">
-              <span className="font-sora text-xl font-bold">L</span>
-            </div>
+            <Logo className="mr-2" />
             <span className="font-sora text-xl font-bold">
               <span className="text-brand-600">Local</span>
               <span className="text-gray-700 dark:text-gray-300">Services</span>
