@@ -34,7 +34,7 @@ const Feature: React.FC<FeatureProps> = ({ icon, title, description, delay }) =>
         transition: 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)' 
       }}
     >
-      <div className="w-12 h-12 bg-brand-50 dark:bg-brand-900/30 rounded-lg flex items-center justify-center mb-4 text-brand-500">
+      <div className="w-12 h-12 bg-orange-50 dark:bg-orange-900/30 rounded-lg flex items-center justify-center mb-4 text-orange-500">
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
@@ -95,7 +95,7 @@ const FeaturesSection = () => {
           inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
         }`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Choose <span className="text-warm-gradient">Local Services</span> Finder?
+            Why Choose <span className="bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-red-500">PinWrench</span>?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">
             We connect you with the best local professionals, saving you time and ensuring quality service every time.

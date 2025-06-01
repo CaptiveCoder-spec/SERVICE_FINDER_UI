@@ -16,8 +16,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 10%;
 
-    --primary: 210 100% 35%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 25 95% 98%;
 
     --secondary: 210 20% 96%;
     --secondary-foreground: 222 47% 10%;
@@ -48,8 +48,8 @@
     --popover: 222 47% 9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 100% 45%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 25 95% 98%;
 
     --secondary: 217 33% 17%;
     --secondary-foreground: 210 40% 98%;
@@ -104,11 +104,11 @@
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-red-500;
   }
   
   .text-warm-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-warm-500 to-warm-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-500;
   }
   
   .animated-bg {
@@ -125,7 +125,7 @@
     background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.8),
-      rgba(240, 247, 255, 0.85)
+      rgba(255, 237, 213, 0.85)
     );
   }
 }
@@ -156,7 +156,7 @@
 .particle {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle at center, rgba(224, 242, 254, 0.8), rgba(186, 230, 253, 0));
+  background: radial-gradient(circle at center, rgba(255, 237, 213, 0.8), rgba(254, 215, 170, 0));
 }
 
 .skeleton-loading {
